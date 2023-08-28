@@ -45,65 +45,65 @@ for(var x = 0; x < gameInfo.mapSize.x; x++){
 		// var noiseValueT = gameInfo.noise1.GetNoise(x, y)
 		// var noiseValueR = gameInfo.noise2.GetNoise(x, y)
 		//Replaced By Zach
-		var noiseValueT = Math.random()*2 -1
-		var noiseValueR = Math.random()*2 -1
+		// var noiseValueT = Math.random()*2 -1
+		// var noiseValueR = Math.random()*2 -1
 
 
 
-		var randomNum = Math.random()
-		if(noiseValueT > 0.3 && noiseValueR < -0.3){	
-			offSetMap[x][y] = {
-				type : "desert",
-			};
-		}
+		// var randomNum = Math.random()
+		// if(noiseValueT > 0.3 && noiseValueR < -0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "desert",
+		// 	};
+		// }
 
-		if(noiseValueT > 0.3 && noiseValueR > -0.3 && noiseValueR < 0.3){	
-			offSetMap[x][y] = {
-				type : "savana",
-			};
-		}
+		// if(noiseValueT > 0.3 && noiseValueR > -0.3 && noiseValueR < 0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "savana",
+		// 	};
+		// }
 
-		if(noiseValueT > 0.3 && noiseValueR > 0.3){	
-			offSetMap[x][y] = {
-				type : "jungle"
-			}
-		}
+		// if(noiseValueT > 0.3 && noiseValueR > 0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "jungle"
+		// 	}
+		// }
 
-		if(noiseValueT < 0.3 && noiseValueT > -0.3 && noiseValueR < -0.3){	
-			offSetMap[x][y] = {
-				type : "plain"
-			}
-		}
+		// if(noiseValueT < 0.3 && noiseValueT > -0.3 && noiseValueR < -0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "plain"
+		// 	}
+		// }
 
-		if(noiseValueT < 0.3 && noiseValueT > -0.3 && noiseValueR > -0.3 && noiseValueR < 0.3){	
-			offSetMap[x][y] = {
-				type : "forest"
-			}
-		}
+		// if(noiseValueT < 0.3 && noiseValueT > -0.3 && noiseValueR > -0.3 && noiseValueR < 0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "forest"
+		// 	}
+		// }
 
-		if(noiseValueT < 0.3 && noiseValueT > -0.3 && noiseValueR > 0.3){	
-			offSetMap[x][y] = {
-				type : "marsh"
-			}
-		}
+		// if(noiseValueT < 0.3 && noiseValueT > -0.3 && noiseValueR > 0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "marsh"
+		// 	}
+		// }
 
-		if(noiseValueT < -0.3 && noiseValueR < -0.3){	
-			offSetMap[x][y] = {
-				type : "frost"
-			}
-		}
+		// if(noiseValueT < -0.3 && noiseValueR < -0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "frost"
+		// 	}
+		// }
 
-		if(noiseValueT < -0.3 && noiseValueR > -0.3 && noiseValueR < 0.3){	
-			offSetMap[x][y] = {
-				type : "snow"
-			}
-		}
+		// if(noiseValueT < -0.3 && noiseValueR > -0.3 && noiseValueR < 0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "snow"
+		// 	}
+		// }
 
-		if(noiseValueT < -0.3 && noiseValueR > 0.3){	
-			offSetMap[x][y] = {
-				type : "frozen"
-			}
-		}
+		// if(noiseValueT < -0.3 && noiseValueR > 0.3){	
+		// 	offSetMap[x][y] = {
+		// 		type : "frozen"
+		// 	}
+		// }
 
 				
 		var newCords = oddq_to_cube(x, y)
