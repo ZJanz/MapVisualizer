@@ -690,6 +690,10 @@ function hexToCanvas(hexX, hexZ, x, z, maginify, type, popup, hex){
 		chosenSpriteX = 96;
 		chosenSpriteY = 96; 
 	}
+	if(type === "junglePlains){
+	   	chosenSpriteX = 32;
+		chosenSpriteY = 96;
+	   }
 	if(type === "frost"){
 		chosenSpriteX = 160;
 		chosenSpriteY = 96; 
