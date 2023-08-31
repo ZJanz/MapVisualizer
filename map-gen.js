@@ -39,9 +39,19 @@ for(var x = 0; x < gameInfo.mapSize.x; x++){
 	offSetMap.push([]);
 	for(var y = 0; y < gameInfo.mapSize.z; y++){
 		offSetMap[x].push({});
-		offSetMap[x][y] = {
-			type : "grass",
-		};
+		if(y%2===1){
+			offSetMap[x][y] = {
+				////////////FOR CAZALSKI///////////////////
+				type : "plains",
+				////////////FOR CAZALSKI///////////////////
+			};
+		} else {
+			offSetMap[x][y] = {
+				////////////FOR CAZALSKI///////////////////
+				type : "junglePlains",
+				////////////FOR CAZALSKI///////////////////
+			};
+		}
 		// var noiseValueT = gameInfo.noise1.GetNoise(x, y)
 		// var noiseValueR = gameInfo.noise2.GetNoise(x, y)
 		//Replaced By Zach
