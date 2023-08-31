@@ -694,6 +694,10 @@ function hexToCanvas(hexX, hexZ, x, z, maginify, type, popup, hex){
 	   	chosenSpriteX = 32;
 		chosenSpriteY = 96;
 	   }
+	if(type === "deepOcean"){
+		chosenSpriteX = 192;
+		chosenSpriteY = 0;
+	}
 	if(type === "frost"){
 		chosenSpriteX = 160;
 		chosenSpriteY = 96; 
